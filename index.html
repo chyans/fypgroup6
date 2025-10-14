@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project Website</title>
+	<meta name="description" content="University project overview, team, and progress." />
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<script>
+		function toggleNav(){
+			var links = document.getElementById('nav-links');
+			links.classList.toggle('open');
+		}
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container navbar">
+			<a class="brand" href="./index.html"><span class="logo" aria-hidden="true"></span><span>Project Website</span></a>
+			<nav>
+				<button class="burger" aria-label="Open menu" onclick="toggleNav()">☰</button>
+				<div id="nav-links" class="nav-links">
+					<a class="active" href="./index.html">Home</a>
+					<a href="./team.html">Team</a>
+					<a href="./docs.html">Project Progress</a>
+					<a href="./demo.html">Demo / Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<p class="sr-only" id="purpose">Landing page introducing the project, value, and links.</p>
+				<div class="hero-card">
+					<p class="muted">University Project</p>
+					<h1 class="title">Short Project Title</h1>
+					<p class="tagline">A one-line tagline that clearly states the problem we solve and the core idea.</p>
+					<div class="cta-row">
+						<a class="btn primary" href="./demo.html">Start Demo</a>
+						<a class="btn" href="./docs.html">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2>What the project does</h2>
+				<p class="lead">Briefly describe the objective, the problem being solved, and the primary features.</p>
+				<div class="grid cols-3">
+					<div class="card">
+						<h3>Objective</h3>
+						<p class="muted">State the core outcome users get from this project.</p>
+					</div>
+					<div class="card">
+						<h3>How it works</h3>
+						<p class="muted">1–2 sentence summary of how the system operates.</p>
+					</div>
+					<div class="card">
+						<h3>Main features</h3>
+						<ul>
+							<li>Feature A</li>
+							<li>Feature B</li>
+							<li>Feature C</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="brand"><span class="logo" aria-hidden="true"></span><strong>Project Website</strong></div>
+				<div class="small">© <span id="y"></span> • Built for our university project</div>
+			</div>
+			<div class="row">
+				<div class="small">Contact: <a href="mailto:team@example.edu">team@example.edu</a></div>
+				<div class="small">
+					<a href="./team.html">Team</a>
+					<span> · </span>
+					<a href="./docs.html">Progress</a>
+					<span> · </span>
+					<a href="./demo.html">Demo</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

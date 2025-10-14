@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project Progress • Project Website</title>
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<script>
+		function toggleNav(){
+			var links = document.getElementById('nav-links');
+			links.classList.toggle('open');
+		}
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container navbar">
+			<a class="brand" href="./index.html"><span class="logo" aria-hidden="true"></span><span>Project Website</span></a>
+			<nav>
+				<button class="burger" aria-label="Open menu" onclick="toggleNav()">☰</button>
+				<div id="nav-links" class="nav-links">
+					<a href="./index.html">Home</a>
+					<a href="./team.html">Team</a>
+					<a class="active" href="./docs.html">Project Progress</a>
+					<a href="./demo.html">Demo / Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section">
+			<div class="container">
+				<h1 class="title" style="margin:12px 0;">Project Progress</h1>
+				<p class="lead">Updates, reports, and documentation. Link out to Google Docs, GitHub issues, and reports.</p>
+
+				<div class="grid cols-2">
+					<div class="card">
+						<h3>Links</h3>
+						<ul>
+							<li><a href="#">Google Drive Folder</a></li>
+							<li><a href="#">GitHub Repository</a></li>
+							<li><a href="#">Latest Report (PDF)</a></li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>Notes</h3>
+						<p class="muted">Drop quick meeting summaries, test results, or todos.</p>
+						<ul>
+							<li>Week N: Summary of progress and blockers.</li>
+							<li>Key decision: Architecture X over Y due to Z.</li>
+							<li>Next steps: task A, task B, task C.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card" style="margin-top:16px;">
+					<h3>Milestones</h3>
+					<div class="timeline">
+						<div class="milestone">
+							<div class="date">Sept 15</div>
+							<strong>Proposal submitted</strong>
+						</div>
+						<div class="milestone">
+							<div class="date">Oct 5</div>
+							<strong>Prototype ready for internal testing</strong>
+						</div>
+						<div class="milestone">
+							<div class="date">Nov 10</div>
+							<strong>User testing and feedback</strong>
+						</div>
+						<div class="milestone">
+							<div class="date">Dec 1</div>
+							<strong>Final presentation</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="brand"><span class="logo" aria-hidden="true"></span><strong>Project Website</strong></div>
+				<div class="small">© <span id="y"></span></div>
+			</div>
+		</div>
+	</footer>
+	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

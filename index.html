@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TripMate - Multimedia Trip Planning</title>
+	<meta name="description" content="TripMate: A multimedia trip planning and visualization application for seamless travel experiences." />
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<script>
+		function toggleNav(){
+			var links = document.getElementById('nav-links');
+			links.classList.toggle('open');
+		}
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container navbar">
+			<a class="brand" href="./index.html"><span class="logo" aria-hidden="true"></span><span>TripMate</span></a>
+			<nav>
+				<button class="burger" aria-label="Open menu" onclick="toggleNav()">☰</button>
+				<div id="nav-links" class="nav-links">
+					<a class="active" href="./index.html">Home</a>
+					<a href="./team.html">Team</a>
+					<a href="./docs.html">Project Progress</a>
+					<a href="./demo.html">Demo / Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<p class="sr-only" id="purpose">Landing page introducing the project, value, and links.</p>
+				<div class="hero-card">
+				<p class="muted">CSIT-25-S4-23</p>
+				<h1 class="title">TripMate</h1>
+				<p class="tagline">Revolutionizing the way you plan, document, and reflect on your trips with optimized routing and multimedia storytelling.</p>
+					<div class="cta-row">
+						<a class="btn primary" href="./demo.html">Start Demo</a>
+						<a class="btn" href="./docs.html">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+			<h2>About TripMate</h2>
+			<p class="lead">A web-based and mobile application that transforms how people plan, document, and reflect on their trips through optimized routing, Google Maps visualization, and multimedia documentation.</p>
+				<div class="grid cols-3">
+				<div class="card">
+					<h3>Objective</h3>
+					<p class="muted">Simplify trip planning by automatically optimizing travel routes based on minimum distance, visualizing them on Google Maps, and enabling users to document their journey with photos and reflections.</p>
+				</div>
+				<div class="card">
+					<h3>How it works</h3>
+					<p class="muted">Enter the sites you want to visit, and TripMate generates an optimized travel plan based on minimum distance. Visualize your route on Google Maps, capture photos during your trip, and later enjoy automated slideshows of your journey.</p>
+				</div>
+				<div class="card">
+					<h3>Main features</h3>
+					<ul>
+						<li>Optimized route planning (minimum distance)</li>
+						<li>Google Maps integration & visualization</li>
+						<li>Photo upload & site association</li>
+						<li>Automated trip slideshow</li>
+						<li>Q&A about visited sites</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+			<div class="brand"><span class="logo" aria-hidden="true"></span><strong>TripMate</strong></div>
+			<div class="small">© <span id="y"></span> • CSIT-25-S4-23 Final Year Project</div>
+			</div>
+			<div class="row">
+				<div class="small">Contact: <a href="mailto:team@example.edu">team@example.edu</a></div>
+				<div class="small">
+					<a href="./team.html">Team</a>
+					<span> · </span>
+					<a href="./docs.html">Progress</a>
+					<span> · </span>
+					<a href="./demo.html">Demo</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

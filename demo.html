@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo & Contact • TripMate</title>
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<script>
+		function toggleNav(){
+			var links = document.getElementById('nav-links');
+			links.classList.toggle('open');
+		}
+	</script>
+</head>
+<body>
+	<header class="header">
+		<div class="container navbar">
+			<a class="brand" href="./index.html"><span class="logo" aria-hidden="true"></span><span>TripMate</span></a>
+			<nav>
+				<button class="burger" aria-label="Open menu" onclick="toggleNav()">☰</button>
+				<div id="nav-links" class="nav-links">
+					<a href="./index.html">Home</a>
+					<a href="./team.html">Team</a>
+					<a href="./docs.html">Project Progress</a>
+					<a class="active" href="./demo.html">Demo / Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section">
+			<div class="container">
+				<h1 class="title" style="margin:12px 0;">Try the Demo</h1>
+				<p class="lead">Experience TripMate's multimedia trip planning features. Try our interactive demo to see how we revolutionize travel planning with visualization and smart recommendations.</p>
+				<div class="cta-row">
+					<a class="btn primary" href="#">Open Live Demo</a>
+					<a class="btn ghost" href="#">Repository</a>
+				</div>
+				<div class="card" style="margin-top:16px;">
+					<h3>Demo Features</h3>
+					<ol>
+						<li>Enter multiple destinations and see optimized route planning</li>
+						<li>Interactive Google Maps visualization of your trip</li>
+						<li>Upload and associate photos with specific sites</li>
+						<li>View automated slideshow of your documented journey</li>
+						<li>Ask questions about visited sites and get information</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2>Contact us</h2>
+				<p class="lead">Have feedback about TripMate or questions about our multimedia trip planning platform? We'd love to hear from you!</p>
+				<form class="card" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you.');">
+					<label for="name">Name</label>
+					<input class="input" id="name" name="name" required />
+					<label for="email">Email</label>
+					<input class="input" id="email" name="email" type="email" required />
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" class="input" required></textarea>
+					<div class="cta-row" style="margin-top:12px;">
+						<button class="btn primary" type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="brand"><span class="logo" aria-hidden="true"></span><strong>TripMate</strong></div>
+				<div class="small">© <span id="y"></span></div>
+			</div>
+		</div>
+	</footer>
+	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

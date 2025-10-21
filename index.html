@@ -21,9 +21,9 @@
 				<button class="burger" aria-label="Open menu" onclick="toggleNav()">☰</button>
 				<div id="nav-links" class="nav-links">
 					<a class="active" href="./index.html">Home</a>
-					<a href="./team.html">Team</a>
-					<a href="./docs.html">Project Progress</a>
-					<a href="./demo.html">Demo / Contact</a>
+					<a href="./team.html">Team & Progress</a>
+					<a href="#demo">Demo</a>
+					<a href="#contact">Contact</a>
 				</div>
 			</nav>
 		</div>
@@ -32,15 +32,15 @@
 	<main>
 		<section class="hero">
 			<div class="container">
-				<p class="sr-only" id="purpose">Landing page introducing the project, value, and links.</p>
 				<div class="hero-card">
-				<p class="muted">CSIT321-FYP25S4-06</p>
+				<p class="muted">CSIT321-25-S4-23</p>
 				<h1 class="title">TripMate</h1>
 				<p class="tagline">Revolutionizing the way you plan, document, and reflect on your trips with optimized routing and multimedia storytelling.</p>
 					<div class="cta-row">
-						<a class="btn primary" href="./demo.html">Start Demo</a>
-						<a class="btn" href="./docs.html">Learn More</a>
+						<a class="btn primary" href="#" style="font-size: 18px; padding: 12px 24px;">Get Started Free</a>
+					<a class="btn" href="#demo">Try Demo</a>
 					</div>
+					<p class="small" style="text-align: center; margin-top: 12px;">Completely free to start • Upgrade anytime</p>
 				</div>
 			</div>
 		</section>
@@ -66,9 +66,98 @@
 						<li>Photo upload & site association</li>
 						<li>Automated trip slideshow</li>
 						<li>Q&A about visited sites</li>
+						<li>AI-powered trip recommendations</li>
 					</ul>
 				</div>
 				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="section" style="background: var(--panel);">
+			<div class="container">
+				<h2 style="text-align: center; margin-bottom: 8px;">Start Free, Upgrade When Ready</h2>
+						<p class="lead" style="text-align: center; margin-bottom: 24px;">TripMate is free to use with core features. Premium includes unlimited trips and advanced features.</p>
+				
+				<div class="grid cols-2" style="max-width: 800px; margin: 0 auto;">
+					<div class="card" style="text-align: center; border: 2px solid var(--border);">
+						<h3>Free Plan</h3>
+						<div style="font-size: 32px; font-weight: bold; color: var(--accent); margin: 12px 0;">S$0</div>
+						<p class="muted" style="margin-bottom: 16px;">Perfect for getting started</p>
+						<ul style="text-align: left; margin: 16px 0;">
+							<li>Up to 2 trips per month</li>
+							<li>Route optimization</li>
+							<li>Photo upload (10 per trip)</li>
+							<li>Google Maps integration</li>
+							<li>Basic slideshow generation</li>
+						</ul>
+						<a class="btn" href="#" style="width: 100%; margin-top: 16px;">Get Started Free</a>
+						<p class="small" style="margin-top: 8px;">No credit card required • Always free</p>
+					</div>
+					
+					<div class="card" style="text-align: center; border: 2px solid var(--accent); position: relative;">
+						<div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold;">POPULAR</div>
+						<h3>Premium Plan</h3>
+						<div style="font-size: 32px; font-weight: bold; color: var(--accent); margin: 12px 0;">S$9.99<span style="font-size: 16px; color: var(--muted);">/month</span></div>
+						<p class="muted" style="margin-bottom: 16px;">For serious travelers</p>
+						<ul style="text-align: left; margin: 16px 0;">
+							<li>Unlimited trips</li>
+							<li>Route optimization</li>
+							<li>Unlimited photo uploads</li>
+							<li>Premium Google Maps features</li>
+							<li>HD slideshow generation</li>
+							<li>AI-powered trip recommendations</li>
+							<li>Export to PDF & social sharing</li>
+						</ul>
+						<!-- Removed upgrade button for informational page -->
+						<p class="small" style="margin-top: 8px;">S$9.99/month • Cancel anytime</p>
+					</div>
+				</div>
+				
+				<div style="text-align: center; margin-top: 24px;">
+					<p class="muted">Start with our free plan - upgrade anytime for more features.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="demo" class="section" style="background: var(--panel);">
+			<div class="container">
+				<h2 style="text-align: center; margin-bottom: 8px;">Try the Demo</h2>
+				<p class="lead" style="text-align: center; margin-bottom: 24px;">Experience TripMate's multimedia trip planning features. Try our interactive demo to see how we revolutionize travel planning with visualization and smart recommendations.</p>
+				<div class="cta-row" style="justify-content: center;">
+					<a class="btn primary" href="#" style="font-size: 18px; padding: 12px 24px;">Get Started Free</a>
+					<a class="btn" href="#">Open Live Demo</a>
+				</div>
+				<p class="small" style="text-align: center; margin-top: 12px;">Start planning your trips for free - upgrade anytime for more features</p>
+				<div class="card" style="margin-top:16px;">
+					<h3>Demo Features</h3>
+					<ol>
+						<li>Enter multiple destinations and see optimized route planning</li>
+						<li>Interactive Google Maps visualization of your trip</li>
+						<li>Upload and associate photos with specific sites</li>
+						<li>View automated slideshow of your documented journey</li>
+						<li>Ask questions about visited sites and get information</li>
+						<li>Experience AI-powered trip recommendations based on your preferences</li>
+					</ol>
+				</div>
+				
+		</section>
+
+		<section id="contact" class="section">
+			<div class="container">
+				<h2>Contact us</h2>
+				<p class="lead">Have feedback about TripMate or questions about our multimedia trip planning platform? We'd love to hear from you!</p>
+				<form class="card" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you.');">
+					<label for="name">Name</label>
+					<input class="input" id="name" name="name" required />
+					<label for="email">Email</label>
+					<input class="input" id="email" name="email" type="email" required />
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" class="input" required></textarea>
+					<div class="cta-row" style="margin-top:12px;">
+						<button class="btn primary" type="submit">Send</button>
+					</div>
+				</form>
 			</div>
 		</section>
 	</main>
@@ -77,16 +166,16 @@
 		<div class="container">
 			<div class="row">
 			<div class="brand"><span class="logo" aria-hidden="true"></span><strong>TripMate</strong></div>
-			<div class="small">© <span id="y"></span> • CSIT321-FYP25S4-06</div>
+			<div class="small">© <span id="y"></span> • CSIT321-25-S4-23 Final Year Project</div>
 			</div>
 			<div class="row">
 				<div class="small">Contact: <a href="mailto:team@example.edu">team@example.edu</a></div>
 				<div class="small">
-					<a href="./team.html">Team</a>
+					<a href="./team.html">Team & Progress</a>
 					<span> · </span>
-					<a href="./docs.html">Progress</a>
+					<a href="#demo">Demo</a>
 					<span> · </span>
-					<a href="./demo.html">Demo</a>
+					<a href="#contact">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -94,7 +183,3 @@
 	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
-
-
-
